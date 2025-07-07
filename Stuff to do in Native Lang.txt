@@ -1,0 +1,21 @@
+#Use This For NVC
+
+doskey nvc=python "C:\Users\chere\OneDrive\Desktop\Native_lang\nvc.py" $*
+
+#but if it fails
+
+use doskey nvc=py "C:\Users\chere\OneDrive\Desktop\Native_lang\nvc.py" $*
+
+#Command For it requires you to Go To The Directory of the folder the File is then run
+
+nvc nameofthefile.nvl
+
+From Stacky game Use it and Well Try To Update NVCDOWN i guess
+     
+
+
+
+    enjoy,
+           stackygame
+
+ 
