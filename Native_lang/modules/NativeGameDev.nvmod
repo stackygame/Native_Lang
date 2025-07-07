@@ -1,0 +1,22 @@
+# modules/NativeGameDev.nvmod
+import pygame
+
+pygame.init()
+screen = pygame.display.set_mode((400, 400))
+clock = pygame.time.Clock()
+objects = {}
+
+def Square(size):
+    class _square:
+        def player():
+            objects["player"] = pygame.Rect(50, 50, size, size)
+    return _square
+
+def ArrowKeys():
+    keys = pygame.key.get_pressed()
+    return keys[pygame.K_LEFT] or keys[pygame.K_RIGHT]
+
+def Move(name, dir):
+    r = objects[name]
+    if dir == "left": r.x -= 5
+    elif dir == "right": r.x += 5
